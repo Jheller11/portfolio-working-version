@@ -4,19 +4,24 @@ import Header from '../Header/Header.js'
 import About from '../About/About.js'
 import Projects from '../Projects/Projects.js'
 import Experience from '../Experience/Experience.js'
+import Contact from '../Contact/Contact.js'
+import Footer from '../Footer/Footer.js'
 import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
-        <Switch>
-          <Route path="/projects" component={Projects} />
-          <Route path="/experience" component={Experience} />
-          <Route path="/" component={About} />
-          <Redirect path="/*" to="/" />
-        </Switch>
+        <main>
+          <Switch>
+            <Route path="/projects" component={Projects} />
+            <Route path="/experience" component={Experience} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/" component={About} />
+            <Redirect path="/*" to="/" />
+          </Switch>
+        </main>
       </div>
     )
   }
