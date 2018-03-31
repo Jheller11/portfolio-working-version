@@ -9,7 +9,9 @@ const Header = () => {
         <h2>- Web Developer</h2>
       </div>
       <nav>
-        <Link to="/">About</Link>
+        <Link className="active" to="/">
+          About
+        </Link>
         <Link to="/projects">Projects</Link>
         <Link to="/experience">Experience</Link>
         <Link to="/Contact">Contact</Link>

@@ -7,7 +7,7 @@ const projectArray = [
     description:
       'This Tower of Hanoi inspired game was created for General Assembly WDI.  Move blocks to reassemble the pyramid from the left side to the right side.',
     techs: ['HTML', 'CSS', 'JavaScript'],
-    img: 'test',
+    img: '',
     repo: 'https://github.com/Jheller11/pyramids'
   },
   {
@@ -15,9 +15,18 @@ const projectArray = [
     url: 'https://liverpoollinks.herokuapp.com/',
     description:
       'This application was designed to allow fans of Liverpool FC to share news and videos.  Posts can include links to external articles/blog posts or youtube videos.  Additionally, the application provides a league table and map of premiere league stadiums.',
-    techs: ['Mongoose', 'Express', 'Node', 'Handlebars'],
-    img: 'test1',
+    techs: ['Express', 'Node', 'MongoDB', 'Handlebars'],
+    img: '/project2.png',
     repo: 'https://github.com/Jheller11/LFC-page'
+  },
+  {
+    name: 'Global Cup',
+    url: 'https://global-cup.herokuapp.com/',
+    description:
+      'Solution to handling registration for local recreational sports leagues.  Users have the ability to register a team and create a list of players.  Additionally, users can identify a coach/captain and provide contact information to receive league-wide announcements.',
+    techs: ['React', 'Express', 'Node', 'MongoDB'],
+    img: '/project3.png',
+    repo: ''
   }
 ]
 
@@ -28,17 +37,24 @@ class Projects extends Component {
         return <li>{tech}</li>
       })
       return (
-        <div>
-          <h3>{project.name}</h3>
-          <img src={project.img} alt={project.name} />
-          <p>{project.description}</p>
-          <ul>{techs}</ul>
-          <p>
-            Visit the deployed project: <a href={project.url}>{project.name}</a>
-          </p>
-          <p>
-            View the repository on <a href={project.repo}>GitHub</a>{' '}
-          </p>
+        <div className="flex">
+          <div>
+            <h3>{project.name}</h3>
+
+            <p>{project.description}</p>
+            <ul>{techs}</ul>
+            <p>
+              Visit the deployed project:{' '}
+              <a href={project.url}>{project.name}</a>
+            </p>
+            <p>
+              View the repository on <a href={project.repo}>GitHub</a>{' '}
+            </p>
+          </div>
+          <div>
+            {' '}
+            <img src={project.img} alt={project.name} />
+          </div>
         </div>
       )
     })

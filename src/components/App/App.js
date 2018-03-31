@@ -5,7 +5,6 @@ import About from '../About/About.js'
 import Projects from '../Projects/Projects.js'
 import Experience from '../Experience/Experience.js'
 import Contact from '../Contact/Contact.js'
-import Footer from '../Footer/Footer.js'
 import './App.css'
 
 class App extends Component {
@@ -19,7 +18,7 @@ class App extends Component {
             <Route path="/experience" component={Experience} />
             <Route path="/contact" component={Contact} />
             <Route path="/" component={About} />
-            <Redirect path="/*" to="/" />
+            {/* <Redirect path="/*" to="/" /> */}
           </Switch>
         </main>
       </div>

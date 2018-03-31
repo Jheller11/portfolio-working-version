@@ -1,6 +1,7 @@
 a {
   color: red;
   text-decoration: none;
+  padding: 10px 10px 0 10px;
 }
 
 h1,
@@ -13,11 +14,22 @@ h1 {
 }
 main {
   margin: 20px;
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+img {
+  height: 300px;
+  width: 500px;
+  border: 1px solid gray;
 }
 
 header {
-  background-color: ghostwhite;
-  margin: 20px;
   width: 100%;
   position: relative;
 }
@@ -31,6 +43,7 @@ header:before {
   width: 50%;
   position: absolute;
 }
+
 nav {
   display: flex;
   flex-direction: row;
