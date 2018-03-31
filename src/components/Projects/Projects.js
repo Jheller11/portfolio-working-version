@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 
 const projectArray = [
   {
-    name: 'Tower of Hanoi',
-    url: 'https://jheller11.github.io/pyramids/',
+    name: 'Global Cup',
+    url: 'https://global-cup.herokuapp.com/',
     description:
-      'This Tower of Hanoi inspired game was created for General Assembly WDI.  Move blocks to reassemble the pyramid from the left side to the right side.',
-    techs: ['HTML', 'CSS', 'JavaScript'],
-    img: '',
-    repo: 'https://github.com/Jheller11/pyramids'
+      'Solution to handling registration for local recreational sports leagues.  Users have the ability to register a team and create a list of players.  Additionally, users can identify a coach/captain and provide contact information to receive league-wide announcements.',
+    techs: ['React', 'Express', 'Node', 'MongoDB'],
+    img: '/project3.png',
+    repo: ''
   },
   {
     name: 'Liverpool Links',
@@ -20,13 +20,13 @@ const projectArray = [
     repo: 'https://github.com/Jheller11/LFC-page'
   },
   {
-    name: 'Global Cup',
-    url: 'https://global-cup.herokuapp.com/',
+    name: 'Pyramids',
+    url: 'https://jheller11.github.io/pyramids/',
     description:
-      'Solution to handling registration for local recreational sports leagues.  Users have the ability to register a team and create a list of players.  Additionally, users can identify a coach/captain and provide contact information to receive league-wide announcements.',
-    techs: ['React', 'Express', 'Node', 'MongoDB'],
-    img: '/project3.png',
-    repo: ''
+      'This Tower of Hanoi inspired game was created for General Assembly WDI.  Move blocks to reassemble the pyramid from the left side to the right side.',
+    techs: ['HTML', 'CSS', 'JavaScript'],
+    img: '/project1.png',
+    repo: 'https://github.com/Jheller11/pyramids'
   }
 ]
 
@@ -37,23 +37,24 @@ class Projects extends Component {
         return <li>{tech}</li>
       })
       return (
-        <div className="flex">
-          <div>
-            <h3>{project.name}</h3>
-
-            <p>{project.description}</p>
-            <ul>{techs}</ul>
-            <p>
-              Visit the deployed project:{' '}
-              <a href={project.url}>{project.name}</a>
-            </p>
-            <p>
-              View the repository on <a href={project.repo}>GitHub</a>{' '}
-            </p>
-          </div>
-          <div>
-            {' '}
-            <img src={project.img} alt={project.name} />
+        <div>
+          <h3>{project.name}</h3>
+          <div className="flex">
+            <div>
+              <p>{project.description}</p>
+              <ul>{techs}</ul>
+              <p>
+                Visit the deployed project:{' '}
+                <a href={project.url}>{project.name}</a>
+              </p>
+              <p>
+                View the repository on <a href={project.repo}>GitHub</a>{' '}
+              </p>
+            </div>
+            <div>
+              {' '}
+              <img src={project.img} alt={project.name} />
+            </div>
           </div>
         </div>
       )
