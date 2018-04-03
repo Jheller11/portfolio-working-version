@@ -37,7 +37,7 @@ class Projects extends Component {
         return <li>{tech}</li>
       })
       return (
-        <div className="flex">
+        <div className="card-panel z-depth-3 ">
           <div>
             <h3>{project.name}</h3>
 

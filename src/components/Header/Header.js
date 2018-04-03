@@ -8,13 +8,13 @@ const Header = () => {
         <h1>Jeffrey Heller</h1>
         <h2>- Web Developer</h2>
       </div>
-      <nav>
-        <Link className="active" to="/">
-          About
-        </Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/experience">Experience</Link>
-        <Link to="/Contact">Contact</Link>
+      <nav className="nav-wrapper light-blue">
+        <div className="right">
+          <Link to="/">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/experience">Experience</Link>
+          <Link to="/Contact">Contact</Link>
+        </div>
       </nav>
     </header>
   )
