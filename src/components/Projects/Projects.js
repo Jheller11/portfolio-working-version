@@ -37,8 +37,8 @@ class Projects extends Component {
         return <li>{tech}</li>
       })
       return (
-        <div className="card-panel z-depth-3 ">
-          <div>
+        <div className="card-panel z-depth-1 flex">
+          <div className="left">
             <h3>{project.name}</h3>
 
             <p>{project.description}</p>
@@ -51,8 +51,7 @@ class Projects extends Component {
               View the repository on <a href={project.repo}>GitHub</a>{' '}
             </p>
           </div>
-          <div>
-            {' '}
+          <div className="right bottom valign-wrapper">
             <img src={project.img} alt={project.name} />
           </div>
         </div>

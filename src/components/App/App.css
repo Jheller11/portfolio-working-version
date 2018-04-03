@@ -1,8 +1,40 @@
 h1,
-h2 {
+h4 {
   display: inline-block;
+}
+
+h1 {
+  padding-left: 20px;
+}
+
+main > * {
+  padding: 20px;
 }
 
 img {
   width: 500px;
+}
+
+.column {
+  width: 60%;
+}
+
+.side {
+  width: 35%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav {
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+img {
+  border: 1px solid gray;
 }

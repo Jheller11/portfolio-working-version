@@ -15,7 +15,6 @@ class App extends Component {
         <main>
           <Switch>
             <Route path="/projects" component={Projects} />
-            <Route path="/experience" component={Experience} />
             <Route path="/contact" component={Contact} />
             <Route path="/" component={About} />
             {/* <Redirect path="/*" to="/" /> */}
