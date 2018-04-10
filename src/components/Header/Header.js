@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <header>
+    <header className="z-depth-1">
       <nav className="nav-wrapper light-blue">
         <div className="right">
           <ul>
@@ -21,7 +21,7 @@ const Header = () => {
       </nav>
       <div>
         <h1>Jeffrey Heller</h1>
-        <h4>- Web Developer</h4>
+        <h6> Web Developer</h6>
       </div>
     </header>
   )
