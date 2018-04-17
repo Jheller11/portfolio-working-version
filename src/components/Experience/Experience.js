@@ -12,7 +12,7 @@ class Experience extends Component {
           deploy many projects both individually and as a member of small teams.
         </p>
         <p>
-          <a href="#">Resume (pdf)</a>
+          <a href="resume.pdf">Resume (pdf)</a>
         </p>
       </div>
     )

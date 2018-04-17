@@ -3,7 +3,7 @@ import Experience from '../Experience/Experience'
 
 const about = {
   brand:
-    'Full-stack web developer with a passion for learning and finding creative solutions to the most complex problems. Experienced team leader who believes in using effective communication and planning to meet organizational goals.',
+    'Hello!  Thanks for visiting my page!  After working in the legal industry for almost 10 years, I decided to pursue my interest in programming and web development. I like building functional easy to use sites and have deployed several small front and back end projects.  ',
   skills1: ['HTML', 'CSS', 'JavaScript', 'Ruby', 'Redux', 'React'],
   skills2: ['MongoDB', 'Express', 'Node', 'Git', 'Github', 'Rails'],
   close: ''
@@ -20,11 +20,16 @@ class About extends Component {
     return (
       <div>
         <div className="left column">
-          <p>"{about.brand}"</p>
+          <h4>About Me:</h4>
+          <p>
+            {about.brand} To take a closer look, please visit my{' '}
+            <a href="/projects">projects</a> page.
+          </p>
+          <h4>Education:</h4>
           <Experience />
         </div>
         <div className="right side">
-          <p>Skills: </p>
+          <h4>Skills: </h4>
           <div className="flex">
             <ul className="collection left">{skills}</ul>
             <ul className="collection right">{skills2}</ul>
