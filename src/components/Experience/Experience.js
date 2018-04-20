@@ -11,9 +11,7 @@ class Experience extends Component {
           technologies. During the program I had the opportunity to build and
           deploy many projects both individually and as a member of small teams.
         </p>
-        <p>
-          <a href="resume.pdf">Resume (pdf)</a>
-        </p>
+        <p />
       </div>
     )
   }

@@ -2,8 +2,17 @@ import React, { Component } from 'react'
 
 const projectArray = [
   {
+    name: 'RentCheck DC',
+    url: 'https://rentcheck-dc.surge.sh/',
+    description:
+      'Full stack tool for estimating DC rent prices by neighborhood, size, number of bedrooms and other factors.  This application uses a linear regression to calculate the estimated price based on a model created with data from other rental listings.',
+    techs: ['React', 'Express', 'Node', 'MongoDB'],
+    img: '/project4.png',
+    repo: 'https://github.com/Jheller11/rentcheck-front'
+  },
+  {
     name: 'Global Cup',
-    url: 'https://global-cup.herokuapp.com/',
+    url: 'https://globalcup.surge.sh/',
     description:
       'Solution to handling registration for local recreational sports leagues.  Users have the ability to register a team and create a list of players.  Additionally, users can identify a coach/captain and provide contact information to receive league-wide announcements.',
     techs: ['React', 'Express', 'Node', 'MongoDB'],
@@ -37,9 +46,9 @@ class Projects extends Component {
         return <li>{tech}</li>
       })
       return (
-        <div className="card-panel z-depth-1 flex">
+        <div className="flex border">
           <div className="left">
-            <h3>{project.name}</h3>
+            <h5>{project.name}</h5>
 
             <p>{project.description}</p>
             <ul>{techs}</ul>

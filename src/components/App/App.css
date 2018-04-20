@@ -25,6 +25,10 @@ img {
   margin: 20px;
 }
 
+.border {
+  border-bottom: 1px solid grey;
+}
+
 .column {
   width: 60%;
 }
