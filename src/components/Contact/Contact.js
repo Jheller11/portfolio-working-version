@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <p>
-        Email: <a href="mailto:heller.jeffrey@gmail.com"> {contact.email}</a>
+        <a href="mailto:heller.jeffrey@gmail.com"> {contact.email}</a>
       </p>
       <p>
         <a href={contact.github}>GitHub</a>
