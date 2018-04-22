@@ -8,15 +8,15 @@ const contact = {
 const Contact = () => {
   return (
     <div className="contact">
-      <p>
-        <a href="mailto:heller.jeffrey@gmail.com"> {contact.email}</a>
-      </p>
-      <p>
-        <a href={contact.github}>GitHub</a>
-      </p>
-      <p>
-        <a href={contact.linkedIn}>LinkedIn</a>
-      </p>
+      <a href="mailto:heller.jeffrey@gmail.com">
+        <img className="icon large" src="/email.png" />
+      </a>
+      <a href={contact.github}>
+        <img className="icon" src="/github.png" />
+      </a>
+      <a href={contact.linkedIn}>
+        <img className="icon" src="/linkedin.png" />
+      </a>
     </div>
   )
 }

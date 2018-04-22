@@ -6,25 +6,17 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <nav className="nav-wrapper light-blue">
-          <div className="right">
-            <ul>
-              <li>
-                <Link to="/">About</Link>
-              </li>
-              <li>
-                <Link to="/projects">Projects</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
         <div>
-          <h3>Jeffrey Heller</h3>
-          <h6> Web Developer</h6>
-          <div className="right contact-icons" />
+          <h1>Jeffrey Heller</h1>
+          <span> - </span>
+          <h4> Web Developer</h4>
+        </div>
+        <div className="forty">
+          <nav>
+            <Link to="/">About</Link> <span>|||</span>
+            <Link to="/projects">Projects</Link> <span>|||</span>
+            <Link to="/contact">Contact</Link>
+          </nav>
         </div>
       </header>
     )

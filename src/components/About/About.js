@@ -12,14 +12,14 @@ const about = {
 class About extends Component {
   render() {
     let skills = about.skills1.map(skill => {
-      return <li className="collection-item">{skill}</li>
+      return <li>{skill}</li>
     })
     let skills2 = about.skills2.map(skill2 => {
-      return <li className="collection-item">{skill2}</li>
+      return <li>{skill2}</li>
     })
     return (
-      <div>
-        <div className="left column">
+      <main>
+        <div>
           <h4>About Me:</h4>
           <p>
             {about.brand} To see a sample of some of the projects I'm working
@@ -28,14 +28,14 @@ class About extends Component {
           <h4>Experience:</h4>
           <Experience />
         </div>
-        <div className="right side">
+        <div>
           <h4>Skills: </h4>
-          <div className="flex">
-            <ul className="collection left">{skills}</ul>
-            <ul className="collection right">{skills2}</ul>
+          <div>
+            <ul>{skills}</ul>
+            <ul>{skills2}</ul>
           </div>
         </div>
-      </div>
+      </main>
     )
   }
 }

@@ -46,9 +46,9 @@ class Projects extends Component {
         return <li>{tech}</li>
       })
       return (
-        <div className="flex border">
-          <div className="left">
-            <h5>{project.name}</h5>
+        <div className="flex">
+          <div>
+            <h3>{project.name}</h3>
 
             <p>{project.description}</p>
             <ul>{techs}</ul>
@@ -60,8 +60,8 @@ class Projects extends Component {
               View the repository on <a href={project.repo}>GitHub</a>{' '}
             </p>
           </div>
-          <div className="right bottom valign-wrapper">
-            <img src={project.img} alt={project.name} />
+          <div>
+            <img className="preview" src={project.img} alt={project.name} />
           </div>
         </div>
       )
