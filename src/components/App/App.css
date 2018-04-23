@@ -1,6 +1,10 @@
+html {
+  min-height: 100%;
+}
+
 .preview {
   width: 400px;
-  height: 300px;
+  height: 260px;
   border: 3px groove #f4ebd9;
   margin-top: 25px;
 }
@@ -11,7 +15,16 @@
   width: 85%;
   margin: 100px auto;
   padding-bottom: 100px;
-  border-bottom: 1px solid #bfacc8;
+  border-bottom: 1px solid #dc851f;
+}
+
+.skill {
+  list-style: none;
+  display: inline-block;
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 1px solid #dc851f;
 }
 
 .flex > * {
@@ -24,17 +37,55 @@ main {
 }
 
 header {
-  width: 100%;
-  color: white;
+  color: #f6f7f8;
+  margin: 20px 20px 0 20px;
 }
 
-header > * {
-  text-align: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-header {
+  border-left: 1px #dc851f solid;
+  border-top: 1px #dc851f solid;
+  width: 20%;
+}
+
+.right-header {
+  border-right: 1px #dc851f solid;
+  border-top: 1px #dc851f solid;
+  width: 20%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  min-width: 80%;
+  margin: 0 20px 20px 20px;
+
+  left: 0;
+  bottom: 0;
+}
+
+.left-footer {
+  border-left: 1px #dc851f solid;
+  border-bottom: 1px #dc851f solid;
+  width: 20%;
+}
+
+.right-footer {
+  border-right: 1px #dc851f solid;
+  border-bottom: 1px #dc851f solid;
+  width: 20%;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  border-bottom: 1px #dc851f solid;
 }
 
 nav > * {
@@ -47,13 +98,13 @@ nav > * {
 }
 
 a {
-  color: white;
+  color: #058ed9;
   text-decoration: none;
 }
 
 a:hover {
   transform: scale(1.1);
-  color: #058ed9;
+  color: #dc851f;
 }
 
 h1,
@@ -62,6 +113,7 @@ h4 {
 }
 
 h1 {
+  padding-top: 20px;
   text-decoration: underline #058ed9;
 }
 
@@ -84,4 +136,12 @@ h1 {
 .large {
   height: 50px;
   margin-top: -8px;
+}
+
+ul {
+  display: inline-block;
+}
+
+.about {
+  margin: 10%;
 }

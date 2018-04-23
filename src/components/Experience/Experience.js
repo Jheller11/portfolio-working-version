@@ -4,7 +4,7 @@ class Experience extends Component {
   render() {
     return (
       <div>
-        <h6>General Assembly Web Development Immmersive</h6>
+        <h4>General Assembly Web Development Immmersive</h4>
         <p>
           I attended General Assembly from January 2018 - April 2018. This 500
           hour course focuses on writing and implementing front and back end
