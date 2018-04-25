@@ -7,16 +7,24 @@ const contact = {
 }
 const Contact = () => {
   return (
-    <div className="contact">
-      <a href="mailto:heller.jeffrey@gmail.com">
-        <img className="icon large" src="/email.png" />
-      </a>
-      <a href={contact.github}>
-        <img className="icon" src="/github.png" />
-      </a>
-      <a href={contact.linkedIn}>
-        <img className="icon" src="/linkedin.png" />
-      </a>
+    <div>
+      <p className="center">
+        Thanks for visiting my page. Please use any of the links below to
+        contact me:
+      </p>
+      <div className="contact">
+        <a href="mailto:heller.jeffrey@gmail.com">
+          <img className="icon large" alt="email" src="/email.png" />
+          heller.jeffrey@gmail.com
+        </a>
+        <a href={contact.github}>
+          <img className="icon" alt="github" src="/github.png" /> GitHub
+        </a>
+        <a href={contact.linkedIn}>
+          <img className="icon" alt="linkedin" src="/linkedin.png" /> LinkedIn
+        </a>
+      </div>
+      <div id="space" />
     </div>
   )
 }

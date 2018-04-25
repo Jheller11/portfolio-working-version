@@ -31,7 +31,7 @@ class About extends Component {
     return (
       <div>
         <div className="about">
-          <h2>Who I Am:</h2>
+          <h2>About Me</h2>
           <p>{about.brand}</p>
           <p>
             To see a sample of some of the projects I'm working on, please take
@@ -43,7 +43,7 @@ class About extends Component {
           </p>
         </div>
         <div className="about">
-          <h2>What I Use: </h2>
+          <h2>Skills </h2>
           <div>
             <p>
               <ul>{skills}</ul>
@@ -51,11 +51,11 @@ class About extends Component {
           </div>
         </div>
         <div className="about">
-          <h2>How I Learned:</h2>
+          <h2>Experience</h2>
           <Experience />
         </div>
         <div className="about">
-          <h2>What I'm Looking For:</h2>
+          <h2>Employment</h2>
           <p>
             I am moving to New York, New York at the end of May, 2018. I am
             currently looking for front end/full stack developer jobs in the NYC

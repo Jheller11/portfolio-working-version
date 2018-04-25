@@ -32,8 +32,8 @@ html {
 }
 
 main {
-  width: 85%;
-  margin: 40px auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header {
@@ -107,25 +107,39 @@ a:hover {
   color: #dc851f;
 }
 
-h1,
-h4 {
-  display: inline-block;
-}
-
 h1 {
-  padding-top: 20px;
+  padding-top: 10px;
+  font-size: 40px;
   text-decoration: underline #058ed9;
 }
 
+h2 {
+  font-size: 25px;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#space {
+  height: 100px;
+}
 .contact {
   display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
 }
 
 .icon {
   padding: 2px;
-  margin: 0 50px;
+  margin-top: 10px;
   height: 32px;
 }
 
@@ -133,15 +147,10 @@ h1 {
   transform: scale(1.1);
 }
 
-.large {
-  height: 50px;
-  margin-top: -8px;
-}
-
 ul {
   display: inline-block;
 }
 
 .about {
-  margin: 10%;
+  margin: 5%;
 }
