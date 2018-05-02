@@ -58,6 +58,20 @@ header {
   width: 20%;
 }
 
+h3 {
+  text-decoration: underline #dc851f;
+  font-size: 150%;
+}
+
+.ease {
+  opacity: 0.9;
+  transition: opacity 1s;
+}
+
+.ease:hover {
+  opacity: 1;
+}
+
 footer {
   display: flex;
   justify-content: space-between;

@@ -29,10 +29,10 @@ const projectArray = [
     repo: 'https://github.com/Jheller11/LFC-page'
   },
   {
-    name: 'Pyramids (A Towers of Hanoi inspired game)',
+    name: 'Pyramids',
     url: 'https://jheller11.github.io/pyramids/',
     description:
-      'Thee pyramid starts in the left column of the board.  The objective of the game is to move the pyramid to the third column on the right of the board by only moving one piece at a time.  Additionally, a larger block can never by placed on top of a smaller block.',
+      'In this game inspired by Towers of Hanoi, the pyramid starts in the left column of the board.  The objective of the game is to move the pyramid to the third column on the right of the board by only moving one piece at a time.  Additionally, a larger block can never by placed on top of a smaller block.',
     techs: ['HTML', 'CSS', 'JavaScript'],
     img: '/project1.png',
     repo: 'https://github.com/Jheller11/pyramids'
@@ -43,10 +43,14 @@ class Projects extends Component {
   render() {
     const projects = projectArray.map(project => {
       let techs = project.techs.map(tech => {
-        return <li className="skill">{tech}</li>
+        return (
+          <li key={tech} className="skill">
+            {tech}
+          </li>
+        )
       })
       return (
-        <div className="flex">
+        <div key={project.name} className="flex ease">
           <div>
             <h3>{project.name}</h3>
 
@@ -61,7 +65,9 @@ class Projects extends Component {
             </p>
           </div>
           <div>
-            <img className="preview" src={project.img} alt={project.name} />
+            <a href={project.url}>
+              <img className="preview" src={project.img} alt={project.name} />
+            </a>
           </div>
         </div>
       )

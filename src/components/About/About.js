@@ -11,6 +11,7 @@ const about = {
     'JavaScript',
     'React',
     'Redux',
+    'React Native',
     'Node',
     'Express',
     'Ruby',
@@ -25,7 +26,11 @@ const about = {
 class About extends Component {
   render() {
     let skills = about.skills.map(skill => {
-      return <li className="skill">{skill}</li>
+      return (
+        <li key={skill} className="skill">
+          {skill}
+        </li>
+      )
     })
 
     return (
@@ -45,22 +50,12 @@ class About extends Component {
         <div className="about">
           <h2>Skills </h2>
           <div>
-            <p>
-              <ul>{skills}</ul>
-            </p>
+            <ul>{skills}</ul>
           </div>
         </div>
         <div className="about">
           <h2>Experience</h2>
           <Experience />
-        </div>
-        <div className="about">
-          <h2>Employment</h2>
-          <p>
-            I am moving to New York, New York at the end of May, 2018. I am
-            currently looking for front end/full stack developer jobs in the NYC
-            area.
-          </p>
         </div>
       </div>
     )
