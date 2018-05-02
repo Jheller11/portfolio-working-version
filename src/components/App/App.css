@@ -5,8 +5,14 @@ html {
 .preview {
   width: 400px;
   height: 260px;
-  border: 3px groove #f4ebd9;
+  border: 2px solid #f4ebd9;
   margin-top: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.preview:hover {
+  border: 2px solid #dc851f;
+  transform: scale(1.05);
 }
 
 .flex {
@@ -63,15 +69,6 @@ h3 {
   font-size: 150%;
 }
 
-.ease {
-  opacity: 0.9;
-  transition: opacity 1s;
-}
-
-.ease:hover {
-  opacity: 1;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -119,6 +116,7 @@ a {
 a:hover {
   transform: scale(1.1);
   color: #dc851f;
+  text-decoration: underline #058ed9;
 }
 
 h1 {
@@ -141,14 +139,22 @@ h4 {
   padding: 10px 0;
 }
 
+.active {
+  height: 80px;
+  margin-top: 20px;
+}
+
 #space {
-  height: 100px;
+  bottom: 0;
+  left: 0;
+  height: 200px;
 }
 .contact {
   display: flex;
-  flex-direction: column;
   margin-top: 10px;
-  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  width: 25%;
 }
 
 .icon {
